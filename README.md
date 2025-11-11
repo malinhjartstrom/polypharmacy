@@ -6,8 +6,6 @@ Preprint available at: https://www.medrxiv.org/content/10.1101/2025.10.27.253388
 <br>
 ## Added value
 <mark>Explainable AI customized for extracting SHAP values ([Lundberg & Lee, 2017](https://arxiv.org/abs/1705.07874)) for interval validation data during repeated cross-validation and plotting a beeswarm and a dependency plot. </mark>
-<br>
-The code for preprocessing the data is not available due to the sensitivity of the data. The overall code documentation was generated using an LLM.
 
 ---
 
@@ -30,6 +28,10 @@ The code for preprocessing the data is not available due to the sensitivity of t
 
 <code>c19_survival_blobbogram.R</code> <br>
 - SHAP values, CIs, and p-values for top ranked clinical predictors, as well as hypertensive medication ACEi and ARB, are visualised in a forest plot
+<br>
+The code for preprocessing the data is not available due to the sensitivity of the data.
+<br>
+The overall code documentation was generated using an LLM.
 ---
 
 

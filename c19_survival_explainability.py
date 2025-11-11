@@ -1071,7 +1071,7 @@ def shap_hr(shap_all, feature_all, topfeatures, just_get_df = False):
       this methodological difference.
 
     """
-    # Dataframe to store HR values (Manually chosen values by Attila)
+    # Dataframe to store HR values (Reference values are chosen based on clinical expertise)
     hr_ci_dataframe = pd.DataFrame([], columns=topfeatures,
                                    index=['Ref', 'Step', 'HR_ref', 'CI_ref_low', 'CI_ref_high', 'HR_step',
                                           'CI_step_low', 'CI_step_high'])
@@ -2261,4 +2261,5 @@ prop_hazards(predictions_and_targets)
 # -------------------------------------------------------------------
 # Save all figs in a common PDF file
 # -------------------------------------------------------------------
+
 pdf(date_time, 'figs', None)

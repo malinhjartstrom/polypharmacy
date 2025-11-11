@@ -11,19 +11,22 @@ Preprint available at: https://www.medrxiv.org/content/10.1101/2025.10.27.253388
   The code for preprocessing the data is not available due to the sensitivity of the data. The overall code documentation was generated using a LLM.
 
 ## Table of Contents
-- [Usage](#usage)
+- [Scripts](#scripts)
 - [Example Plots](#example-plots)
 - [Contact](#contact)
 
 ---
 
-## Usage
+## Scripts
+
+<code>c19_survival_table1.R</code> <br>
+- Descriptive statistics for the included patients with critical COVID-19 (n=497)
+
 <code>c19_survival_training.py</code> <br>
-1. This script builds and evaluates a survival analysis model using XGBoost with a Cox proportional hazards objective to predict mortality among ICU COVID-19 patients.
-2. It imports 10 datasets imputed using the MICE algorithm, performs repeated 5-fold cross-validation (20 repetitions, 100 splits), and averages predictions across all imputations.
-3. The model’s explainability is handled with SHAP values, which estimate each feature’s contribution to individual survival predictions and are averaged over imputations and folds.
-4. Performance is measured using the Concordance Index (C-index), with bootstrap resampling (50 times) to compute 95% confidence intervals for both training and validation results.
-5. Finally, the script exports predictions, SHAP explanations, feature data, and evaluation metrics to Excel and text files, providing a complete record of the model’s performance and interpretability.
+- XGBoost with a Cox proportional hazards objective to predict mortality among ICU COVID-19 patients using machine-learning survival analysis
+- 10 datasets have been imputed using the MICE algorithm. Five-fold cross-validation (20 repetitions, 100 splits) is performed over all imputed datasets
+- Performance is measured using the Concordance Index (C-index), with bootstrap resampling (50 times) to compute 95% confidence intervals for both training and internal validation results
+- - Risk predictions and SHAP values are averaged across imputations, folds, and repetitions for all patients in the internal validation dataset (full-case patients)
 
 <code>c19_survival_explainability.py</code> <br>
   - Beeswarm plot for the most important features for one-year mortality prediction
@@ -39,3 +42,6 @@ Preprint available at: https://www.medrxiv.org/content/10.1101/2025.10.27.253388
 ## Example plots
 
 ## Contact
+<address>
+<a href="mailto:malin.hjartstrom@med.lu.se">Malin Hjärtström</a>.<br>
+</address> 

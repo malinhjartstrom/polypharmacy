@@ -4,14 +4,10 @@ One-year mortality risk ML survival analysis and explainable AI in patients with
 Preprint available at: https://www.medrxiv.org/content/10.1101/2025.10.27.25338863v1
 <br>
 <br>
-## Contribution
-Explainable AI customized for extracting SHAP values ([Lundberg & Lee, 2017](https://arxiv.org/abs/1705.07874)) for interval validation data during repeated cross-validation and plotting a beeswarm and a dependency plot.
+## Added value
+<mark>Explainable AI customized for extracting SHAP values ([Lundberg & Lee, 2017](https://arxiv.org/abs/1705.07874)) for interval validation data during repeated cross-validation and plotting a beeswarm and a dependency plot. </mark>
 <br>
 The code for preprocessing the data is not available due to the sensitivity of the data. The overall code documentation was generated using an LLM.
-
-## Table of Contents
-- [Scripts](#scripts)
-- [Contact](#contact)
 
 ---
 
@@ -28,7 +24,7 @@ The code for preprocessing the data is not available due to the sensitivity of t
 
 <code>c19_survival_explainability.py</code> <br>
   - Beeswarm plot for the most important features for one-year mortality prediction <mark>(averaged SHAP values as input instead of an Explanation object)</mark>
-  - Scatter plots with a LOESS curve and a 95% confidence interval (averaged SHAP values as input instead of an Explanation object)
+  - Scatter plots with a LOESS curve and a 95% confidence interval  <mark>(averaged SHAP values as input instead of an Explanation object))</mark>
   - Clinically important reference values are highlighted on the LOESS curve when applicable
   - SHAP hazard ratios with 95% confidence interval showing the feature importance for a range of feature values
 

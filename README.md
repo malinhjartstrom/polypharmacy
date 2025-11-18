@@ -15,6 +15,9 @@ Preprint available at: https://www.medrxiv.org/content/10.1101/2025.10.27.253388
 <code>c19_survival_table1.R</code> <br>
 - Descriptive statistics for the included patients with critical COVID-19 (n=497)
 
+<code>c19_survival_hyperparameter_search.py</code> <br>
+- The search space for hyperparameter optimization. Can replace the function <code>best_params_xgboost()</code> in <code>c19_survival_training.py</code> together with increasing <var>nbr_of_trials</var> to run an Optuna trial.
+
 <code>c19_survival_training.py</code> <br>
 - XGBoost with a Cox proportional hazards objective to predict mortality among ICU COVID-19 patients using machine-learning survival analysis
 - 10 datasets have been imputed using the MICE algorithm. Five-fold cross-validation (20 repetitions, 100 splits) is performed over all imputed datasets
